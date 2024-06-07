@@ -32,3 +32,8 @@ def quicksort(list: list) -> list:
     return quicksort(min_left) + middle + quicksort(max_right)
 
 
+def quicksort_n(n):
+    
+    DISORDERED_LIST = [i for i in range(n, 0, -1)]
+
+    return quicksort(DISORDERED_LIST)
